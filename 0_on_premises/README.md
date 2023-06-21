@@ -11,6 +11,7 @@ In this exercise we want to set up everything we need for the other exercises. A
 
     - Run `mvn spring-boot:run`
     - A message should pop up which tells us how to reach the backend
+    - Make sure to mark the port of the backend as public (otherwise the frontend cannot reach it)
 
 3. Connect the frontend to backend
 
