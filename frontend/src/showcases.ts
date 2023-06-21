@@ -3,16 +3,16 @@ export const SHOWCASES: ShowcaseConfig = {
     baseUrl: "http://localhost:8080",
   },
   "1 – Lift & Shift": {
-    baseUrl: "TODO",
+    baseUrl: "http://localhost:8080",
   },
   "2 – Managed Services": {
-    baseUrl: "TODO",
+    baseUrl: "http://localhost:8080",
   },
   "3 – PaaS": {
-    baseUrl: "TODO",
+    baseUrl: "http://localhost:8080",
   },
   "4 – Lambda": {
-    baseUrl: "TODO",
+    baseUrl: "http://localhost:8080",
   },
 };
 

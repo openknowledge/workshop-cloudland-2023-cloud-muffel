@@ -2,10 +2,15 @@
 
 In this exercise we want to create a DynamoDB table in and deploy a new version of our backend that that table.
 
+Note: Make sure you current directory is now `3_paas`.
+
 1. In the AWS management console open the DynamoDB page
 
     - Create a new DynamoDB table with the default configuration
+    - Use a partition key called "pk" with type string
+    - Use a sort key called "sk" with type string
     - Name it after your user
+    - Leave everything as is and create the table
 
 2. Build a new version of the backend
 
@@ -26,19 +31,13 @@ In this exercise we want to create a DynamoDB table in and deploy a new version 
 6. Connect the frontend to AppRunner service
 
     - Adjust the showcase "3 – PaaS" in showcases.ts
-    - Set the base URL using the default of your app runner service
-    - Select showcase "2 – Managed Services" and check if the app works properly
-
-7. Connect the frontend to AppRunner service
-
-    - Adjust the showcase "3 – PaaS" in showcases.ts
     - Set the base URL using the default domain of your app runner service
     - Select showcase "3 – PaaS" and check if the app works properly
 
-8. Check the DynamoDB table in the AWS Management Console
+7. Check the DynamoDB table in the AWS Management Console
 
     - You should see some test data that was inserted automatically
 
-9. Use the frontend to add few more topics
+8. Use the frontend to add few more topics
     - Check if you can see them in DynamoDB table
     - Feel free to change the data of a few items

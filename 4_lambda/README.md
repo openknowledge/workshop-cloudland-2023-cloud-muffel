@@ -5,4 +5,37 @@ In this exercise we use AWS Lambda to add additional functionality to our applic
 1. Create a new Lambda function
 
     - Go to the Lambda page in the AWS Management console
-    - Select "Create from Scratch" and use Node.js as runtime
+    - Click on "Create Function"
+    - Select "Author from Scratch" and use Node.js as runtime
+    - Name it after your user
+    - Under permissions choose "Use existing role" and select the role "Lambda"
+    - Create the function
+
+2. Add DynamoDB changes as trigger for our Lambda function
+
+    - Click on "Add Trigger" and select DynamoDB as source
+    - Select the table you created in exercise `3_paas`
+    - Create the trigger
+
+3. Change the code
+
+    - Use `console.log` to print the event to console
+
+4. Connect the frontend to AppRunner service
+
+    - Adjust the showcase "4 – Lambda" in showcases.ts
+    - Set the base URL using the default domain of your app runner service
+    - Select showcase "4 – Lambda" and check if the app works properly
+
+5. Create a new topic using the frontend
+
+6. Check if your Lambda was invoked
+
+    - On the Lambda management page click on the "Monitor" tab
+    - Click on "View CloudWatch logs"
+    - Try to find the output of you `console.log`
+
+7. Play around a with Lambda and DynamoDB
+
+    - Inspect the event further and try to extract things like the topic name
+    - Print the important information
