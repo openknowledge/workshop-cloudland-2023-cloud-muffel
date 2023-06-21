@@ -2,8 +2,12 @@
 
 In this exercise we use AppRunner instead of EC2 to deploy our backend. To do this, a Dockerfile was added that creates a Docker image running our backend.
 
+Note: Make sure you current directory is now `2_managed_services`.
+
 1. Run `aws configure` and use the user information provided to you on paper
 
+    - Use the region of your user
+    - As default output use the json or yaml (you may also just press enter)
     - If everything worked, you can now use the AWS CLI from your console
 
 2. Create an image registry (known as repository) in AWS using ECR. This allows to actually push our newly build Docker iamge.
@@ -21,6 +25,7 @@ In this exercise we use AppRunner instead of EC2 to deploy our backend. To do th
 
 5. Create a new app runner service
 
+    - Go to the AppRunner page and start to create a new service
     - Select container registry and the latest image in our ECR repository
     - Set deployment trigger to automatic (we will benefit from this later on)
     - As service role use the existing "AppRunnerECRAccessRole" role
