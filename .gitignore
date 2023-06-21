@@ -1,0 +1,21 @@
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+/.idea/
+
+# OS
+.DS_Store
+
+# Maven
+target/
+
+# Node
+node_modules
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform/
