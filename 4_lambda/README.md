@@ -20,6 +20,7 @@ In this exercise we use AWS Lambda to add additional functionality to our applic
 3. Change the code
 
     - Use `console.log` to print the event to console
+    - Click on deploy to change the function
 
 4. Connect the frontend to AppRunner service
 
