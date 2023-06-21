@@ -2,16 +2,21 @@
 
 In this exercise we use EC2 to move our backend into the AWS Cloud in a lift & shift manner.
 
+Note: Make sure you current directory is now `1_lift_and_shift`.
+
 1. Login into the AWS Management Console
 
+    - Go to https://console.aws.amazon.com/console/home
+    - Select IAM User
     - Use the user information provided to you on paper
 
 2. Launch an EC2 instance
 
     - Name it after your user account (e.g. apollo)
     - Use the most recent Amazon Linux as OS
-    - Use a t3a.nano instance type
-    - Use the existing default security group
+    - Use a t3a.micro instance type
+    - Proceed without key pair (select in the dropdown menu)
+    - Create a new security group that allows SSH and HTTP traffic (or select an existing one if someone else created one already)
     - Leave everything else as is (but feel free to read all options)
 
 3. After a while, try to "Connect" to the instance using EC2 Instance Connect
