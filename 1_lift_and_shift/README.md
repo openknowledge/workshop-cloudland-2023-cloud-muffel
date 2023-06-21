@@ -30,10 +30,16 @@ Note: Make sure you current directory is now `1_lift_and_shift`.
 
     - If everything is fine, the URL `http://$DOMAIN/categories` should return some data
 
+---
+
+NOTE: This only works when the frontend is running locally (and NOT in GitHub Codepsaces)
+
 5. Connect the frontend to the EC2 instance
 
     - Adjust the showcase "0 – Lift & Shift" in showcases.ts
     - Set the base URL using the domain of your EC2 instance (e.g. `http://$DOMAIN`)
     - Select showcase "0 – Lift & Shift" and check if the app works properly
+
+---
 
 6. Terminate the EC2 instance
